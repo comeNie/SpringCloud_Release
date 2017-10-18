@@ -1,0 +1,51 @@
+# server (eureka 默认端口为：8760)
+server:
+  port: 8760
+
+# spring
+spring:
+  application:
+    name: particle-commonservice-erueka
+
+# eureka
+eureak:
+  client:
+    # 是否注册到eureka
+    register-with-eureka: true
+    # 是否从eureka获取注册信息
+    fetch-registry: false
+    availability-zones:
+      jfsoft: jfsoftZone
+    service-url:
+      jfsoftZone: http://jfsoft:123456@localhost:8760/eureka/
+      defaultZone: http://jfsoft:123456@localhost:8760/eureka/
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+    metadataMap:
+      zone: jfsoftZone
+      user: ${security.user.name}
+      password: ${security.user.password}
+
+
+  # 指定环境
+  environment: dev
+  # 指定数据中心
+  datacenter: jfsoft
+  # 关闭自我保护模式
+  server:
+    enable-self-preservation: false
+    #设置清理无效节点的时间间隔，默认60000，即是60s
+    eviction-interval-timer-in-ms: 60000
+
+# 服务认证
+security:
+  basic:
+    enabled: true
+  user:
+    name: jfsoft
+    password: 123456
+
+management:
+  security:
+    enabled: false

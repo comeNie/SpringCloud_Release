@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="particle-commonservice-admin" />
+        <module name="particle-commonservice-apigateway" />
+        <module name="particle-commonservice-cache" />
+        <module name="particle-commonservice-combine" />
+        <module name="particle-commonservice-config" />
+        <module name="particle-commonservice-eureka" />
+        <module name="particle-commonservice-mq" />
+        <module name="particle-commonservice-sequence" />
+        <module name="particle-commonservice-sso" />
+        <module name="particle-commonservice-turbine" />
+        <module name="particle-commonservice-zipkin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="particle-commonservice" target="1.8" />
+      <module name="particle-commonservice-admin" target="1.8" />
+      <module name="particle-commonservice-apigateway" target="1.8" />
+      <module name="particle-commonservice-cache" target="1.8" />
+      <module name="particle-commonservice-combine" target="1.8" />
+      <module name="particle-commonservice-config" target="1.8" />
+      <module name="particle-commonservice-eureka" target="1.8" />
+      <module name="particle-commonservice-mq" target="1.8" />
+      <module name="particle-commonservice-sequence" target="1.8" />
+      <module name="particle-commonservice-sso" target="1.8" />
+      <module name="particle-commonservice-turbine" target="1.8" />
+      <module name="particle-commonservice-zipkin" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

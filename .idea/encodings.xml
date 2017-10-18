@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/particle-commonservice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/particle-commonservice/particle-commonservice-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/particle-commonservice/particle-commonservice-apigateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/particle-commonservice/particle-commonservice-cache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/particle-commonservice/particle-commonservice-combine" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/particle-commonservice/particle-commonservice-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/particle-commonservice/particle-commonservice-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/particle-commonservice/particle-commonservice-mq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/particle-commonservice/particle-commonservice-sequence" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/particle-commonservice/particle-commonservice-sso" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/particle-commonservice/particle-commonservice-turbine" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/particle-commonservice/particle-commonservice-zipkin" charset="UTF-8" />
+  </component>
+</project>

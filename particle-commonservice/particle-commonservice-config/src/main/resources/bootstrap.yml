@@ -1,0 +1,76 @@
+################################################本地配置###################################
+server:
+port: 8761
+spring:
+  application:
+    name: commonservice-config-server
+  profiles:
+    active: discovery,native
+  cloud:
+    config:
+      server:
+        <span style="color: #ff0000;">native.searchLocations: d:/honghu-config</span>
+security:
+  basic:
+    enabled: true
+  user:
+    name: jfsoft
+    password: 123456
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://jfsoft:123456@localhost:8761/eureka/
+      honghuZone: http://jfsoft:123456@localhost:8761/eureka/
+    registry-fetch-interval-seconds: 300
+    availability-zones:
+      jfsoft: jfsoftZone
+  instance:
+    prefer-ip-address: true
+    metadataMap:
+      version: 1.0
+      variant: A
+      user: ${security.user.name}
+      password: ${security.user.password}
+management:
+  security:
+    enabled: false
+###########################################git远程配置#########################################
+#server:
+#port: 8888
+#spring:
+#  application:
+#    name: commonservice-config-server
+#  profiles:
+#    active: discovery,native
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: http://192.168.0.254/honghu.../honghu-config.git
+#          username: honghu
+#          password: 123456
+#          searchPaths: config-dev
+#security:
+#  basic:
+#    enabled: true
+#  user:
+#    name: honghu
+#    password: 123456
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://honghu:123456@localhost:8761/eureka/
+#      honghuZone: http://honghu:123456@localhost:8761/eureka/
+#    registry-fetch-interval-seconds: 300
+#    availability-zones:
+#      honghu: honghuZone
+#  instance:
+#    prefer-ip-address: true
+#    metadataMap:
+#      version: 1.0
+#      variant: A
+#      user: ${security.user.name}
+#      password: ${security.user.password}
+#management:
+#  security:
+#    enabled: false
